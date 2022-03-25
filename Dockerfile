@@ -21,6 +21,8 @@ ENV LANG="C.UTF-8"
 
 WORKDIR /app
 
+RUN mkdir -p /home/pptruser
+RUN chown -R puppeteer:puppeteer /home/pptruser
 RUN chown -R puppeteer:puppeteer /app
 
 USER puppeteer
